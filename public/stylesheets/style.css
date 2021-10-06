@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 65.5%;
+}
+
+body {
+  background-color: #11253a;
+  font-size: 5rem;
+  color: antiquewhite;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 10vh;
+}
+
+.intro-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  color: #a2dada;
+}
+
+.intro-hero h1 {
+  font-size: 5rem;
+}
+.intro-hero p {
+  font-size: 3rem;
+  padding-top: 1rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  align-items: center;
+}
+.main li {
+  list-style: none;
+  padding: 2rem;
+}
+
+.main a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  font-size: 6rem;
+}
+
+.about h1 {
+  color: #a2dada;
+}
+.about h2 {
+  padding-top: 4rem;
+  font-size: 7rem;
+}
+
+.ayah {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ayah ul {
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+}
+
+.ayah li {
+  list-style: none;
+  padding: 4.5rem;
+}

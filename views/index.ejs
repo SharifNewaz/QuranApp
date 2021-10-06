@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="intro-hero">
+        <h1><%= title %></h1>
+        <p>Name of the chapters in the <%= title %></p>
+      </div>
+    </div>
+
+    <%# Storing the array in the quranChapters variable %>
+    <div class="main">
+      <ul>
+        <%surahs.forEach((surah)=>{ %>
+        <li>
+          <a href="/surah/<%= surah.number %>"
+            ><%=surah.number%>. <%=surah.name%> (<%=surah.englishName%>)</a
+          >
+        </li>
+        <%})%>
+      </ul>
+      <button><a href="/about">Submit</a></button>
+    </div>
+  </body>
+</html>

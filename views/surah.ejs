@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title.englishName %></title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="intro-hero">
+        <h1><%= title.englishName %></h1>
+        <p><%= title.englishNameTranslation %></p>
+      </div>
+    </div>
+
+    <%# Storing the array in the quranChapters variable %>
+    <div class="ayah">
+      <ul>
+        <%surahsArabic.forEach((ayah)=>{%>
+        <li><%=ayah.numberInSurah%> ) <%=ayah.text%></li>
+        <%})%>
+      </ul>
+    </div>
+  </body>
+</html>
